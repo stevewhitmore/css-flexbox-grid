@@ -22,36 +22,20 @@ footer {background-color: $salmon;}
 
 
 section {
-  // PUT YOUR CSS GRID STYLES HERE
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 50px 400px 50px;
+  grid-gap: 5px;
+  
+  header {grid-column: span 2;}
+  aside {grid-column: span 1;}
+  main {grid-column: span 1;}
+  footer {grid-column: span 2;}
 }
 
 @media(max-width: 592px) {
-  // PUT YOUR MOBILE-RESPONSIVE STYLES HERE
+  section {
+    aside {grid-column: span 2;}
+    main {grid-column: span 2;}
+  }
 }
-
-
-
-
-
-
-
-// FOR REFERENCE ONLY
-
-// section {
-//   display: grid;
-//   grid-template-columns: 150px auto;
-//   grid-template-rows: 50px 400px 50px;
-//   grid-gap: 5px;
-  
-//   header {grid-column: span 2;}
-//   aside {grid-column: span 1;}
-//   main {grid-column: span 1;}
-//   footer {grid-column: span 2;}
-// }
-
-// @media(max-width: 592px) {
-//   section {
-//     aside {grid-column: span 2;}
-//     main {grid-column: span 2;}
-//   }
-// }
