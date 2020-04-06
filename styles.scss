@@ -1,0 +1,57 @@
+$blue: #adf;
+$purple: #a5f;
+$white: #fff;
+$black: #000;
+$orange: #fd8;
+$green: #8f8;
+$salmon: #f88;
+body {
+  background-color: $blue;
+  color: $white;
+  font-size: 25px;
+  text-shadow: -1px -1px 0 $black,
+		1px -1px 0 $black,
+		-1px 1px 0 $black,
+		1px 1px 0 $black;
+  padding: 10px;
+}
+header {background-color: $purple;}
+aside {background-color: $orange;}
+main {background-color: $green;}
+footer {background-color: $salmon;}
+
+
+section {
+  // PUT YOUR CSS GRID STYLES HERE
+}
+
+@media(max-width: 592px) {
+  // PUT YOUR MOBILE-RESPONSIVE STYLES HERE
+}
+
+
+
+
+
+
+
+// FOR REFERENCE ONLY
+
+// section {
+//   display: grid;
+//   grid-template-columns: 150px auto;
+//   grid-template-rows: 50px 400px 50px;
+//   grid-gap: 5px;
+  
+//   header {grid-column: span 2;}
+//   aside {grid-column: span 1;}
+//   main {grid-column: span 1;}
+//   footer {grid-column: span 2;}
+// }
+
+// @media(max-width: 592px) {
+//   section {
+//     aside {grid-column: span 2;}
+//     main {grid-column: span 2;}
+//   }
+// }
