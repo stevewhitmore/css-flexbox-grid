@@ -5,6 +5,7 @@ $black: #000;
 $orange: #fd8;
 $green: #8f8;
 $salmon: #f88;
+$yellow: #ff8;
 body {
   background-color: $blue;
   color: $white;
@@ -14,8 +15,31 @@ body {
 		-1px 1px 0 $black,
 		1px 1px 0 $black;
   padding: 10px;
+  font-family: arial;
+  
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 80%;
+    padding: 0 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  p {
+    font-size: 16px;
+    margin: 10px;
+    color: $black;
+    text-shadow: none;
+    background: $white;
+    padding: 10px;
+  }
 }
-header {background-color: $purple;}
+header {
+  background-color: $purple;
+  a {color: $yellow;}
+}
 aside {background-color: $orange;}
 main {background-color: $green;}
 footer {background-color: $salmon;}
@@ -24,7 +48,7 @@ footer {background-color: $salmon;}
 section {
   display: grid;
   grid-template-columns: 150px auto;
-  grid-template-rows: 50px 400px 50px;
+  grid-template-rows: 60px 400px 60px;
   grid-template-areas:
     "menu menu"
     "sidebar content"
