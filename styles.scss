@@ -6,6 +6,7 @@ $orange: #fd8;
 $green: #8f8;
 $salmon: #f88;
 $yellow: #ff8;
+html, body {height: 98%;}
 body {
   background-color: $blue;
   color: $white;
@@ -44,21 +45,32 @@ aside {background-color: $orange;}
 main {background-color: $green;}
 footer {background-color: $salmon;}
 
-
 section {
+  min-height: 100%;
   display: grid;
   grid-template-columns: 150px auto;
-  grid-template-rows: 60px 400px 60px;
+  grid-template-rows: 60px 1fr 60px;
   grid-template-areas:
     "menu menu"
     "sidebar content"
     "foot foot";
   grid-gap: 5px;
   
-  header {grid-area: menu;}
+  header {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
   aside {grid-area: sidebar;}
   main {grid-area: content;}
-  footer {grid-area: foot;}
+  footer {
+    grid-area: foot;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 @media(max-width: 592px) {
