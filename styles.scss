@@ -62,6 +62,9 @@ section {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
+    a:nth-child(3) {order: 2;}
+    a:nth-child(2) {order: 3;}
   }
   aside {grid-area: sidebar;}
   main {grid-area: content;}
@@ -80,6 +83,10 @@ section {
       "sidebar sidebar"
       "content content"
       "foot foot";
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
+    
+    header, footer {flex-direction: column;}
+    header {align-items: stretch;}
+    footer {align-items: center;}
   }
 }
